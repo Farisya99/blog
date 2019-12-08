@@ -1,37 +1,123 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<title> Reading </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-You can use the [editor on GitHub](https://github.com/Farisya99/blog/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.playAudio() {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-### Markdown
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+</head>
+<style>
+* {box-sizing: border-box}
 
-1. Numbered
-2. List
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
 
-**Bold** and _Italic_ and `Code` text
+.navbar a {
+  float: left;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 15%; 
+  text-align: right;
+}
 
-[Link](url) and ![Image](src)
-```
+.navbar a:hover {
+  background-color: #000000;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+.navbar a.active {
+  background-color: #000000;
+}
 
-### Jekyll Themes
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Farisya99/blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+A {text-decoration: none;}
 
-### Support or Contact
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#CCCCCC;}
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+</style>
+
+<body style="background-color:DarkSeaGreen;">
+
+<center>
+<img src="read.jpg" alt="reading" class="center" width="400" height="150"></center>
+
+
+<div class="navbar">
+  <a class="active" href="indexhomepage.html">HOME</a>
+  <a href="about us.html">ABOUT US</a>
+  <a href="character.html">CHARACTER</a>
+  <a href="Spelling.html">SPELLING</a>
+  <a href="reading.html">READING</a>
+  <a href="#">CONTACT</a>
+</div>
+
+
+
+<body>
+
+<audio id="myAudio">
+
+  <source src="reading.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h4> READ THE TEXT </h4>
+
+<button onclick="playAudio()";margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"> <h2> PLAY </h2></button>
+<button onclick="pauseAudio()";margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"><h2> PAUSE </h2></button> 
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+
+  
+<center>
+<img src="text.jpeg" alt="alphabet" class="center" width="600" height="400"></center>
+  
+ </body>
+</html>
